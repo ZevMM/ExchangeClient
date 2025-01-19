@@ -1,6 +1,7 @@
 import React from 'react';
-import Plot from 'react-plotly.js';
 import { useState, useEffect, useRef } from 'react';
+import createPlotlyComponent from 'react-plotly.js/factory';
+const Plot = createPlotlyComponent(Plotly);
 
 
 function makeCandles(prices, idx, candles) {

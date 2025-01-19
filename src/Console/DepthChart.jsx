@@ -1,7 +1,8 @@
 import React from 'react';
-import Plot from 'react-plotly.js';
+import createPlotlyComponent from 'react-plotly.js/factory';
 import { useState } from 'react';
 
+const Plot = createPlotlyComponent(Plotly);
 const DepthChart = ({buyside, sellside, lowsell, lowbuy}) => {
   
   const buyprices = buyside.map((_, i) => i + Math.max(lowbuy - 1, 0));
