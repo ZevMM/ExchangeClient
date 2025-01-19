@@ -12,5 +12,6 @@ export default defineConfig({
     rollupOptions: {
       plugins: [visualizer()]
     }
-  }
+  },
+  base: '/ExchangeClient/'
 })
